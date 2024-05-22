@@ -65,7 +65,7 @@ export default function ShareWork() {
         saveFormat: ImageFormat.jpg,
       });
     
-    setEditedImagePath(normalizeFilePath(image.path));
+    setEditedImagePath(normalizeFilePath(markedImagePath));
 
   }
 
