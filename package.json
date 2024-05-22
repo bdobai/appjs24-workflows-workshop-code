@@ -35,7 +35,7 @@
     "expo-system-ui": "~3.0.4",
     "expo-updates": "^0.25.14",
     "expo-web-browser": "~13.0.3",
-    "glob": "^10.3.12",
+    "glob": "^10.3.16",
     "jsonfile": "^6.1.0",
     "lodash": "^4.17.21",
     "nativewind": "^4.0.36",
