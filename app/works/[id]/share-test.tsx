@@ -82,8 +82,8 @@ export default function ShareWork() {
         </Text>
         <View
           style={{
-            height: dimensions.width - 50,
-            width: dimensions.width - 50,
+            height: dimensions.width - 55,
+            width: dimensions.width - 55,
             alignSelf: "center",
           }}
         >
