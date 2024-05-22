@@ -14,6 +14,8 @@ import { useFavStatusMutation } from "@/data/hooks/useFavStatusMutation";
 import colors from "@/constants/colors";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { LoadingShade } from "@/components/LoadingShade";
+import * as Sharing from "expo-sharing";
+
 
 export default function DisplayWork() {
   const dimensions = useWindowDimensions();
@@ -57,11 +59,11 @@ export default function DisplayWork() {
           />
         </View>
         <View>
-          <View className="flex-row align-middle">
+          <View className="flex-row align-middle items-center mr-2">
             <Text className="flex-1 font-semibold text-3xl px-4 py-2 bg-shade-2">
               {work?.title}
             </Text>
-            <View className="justify-center px-4 flex-row items-center">
+            <View className="justify-center px-4 flex-row items-center gap-3">
               <Pressable
                 className="active:opacity-50"
                 disabled={favQuery.isLoading || favMutation.isPending}
@@ -76,6 +78,9 @@ export default function DisplayWork() {
                 />
               </Pressable>
             </View>
+            <Link push href={`/works/${id}/share-test`}>
+              <Icon name="share-alt" color={colors.tint} size={28} />
+            </Link>
           </View>
           <View className="px-4 gap-y-2 py-2">
             {work?.creators.length ? (
