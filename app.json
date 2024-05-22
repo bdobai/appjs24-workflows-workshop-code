@@ -32,14 +32,30 @@
     },
     "plugins": [
       [
-        "expo-router"
-      ]
+        "expo-router",
+        {
+          "asyncRoutes": false
+        }
+      ],
+      "react-native-image-marker"
     ],
     "experiments": {
       "typedRoutes": true
     },
     "runtimeVersion": {
       "policy": "appVersion"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4d9e34f2-cfad-4c14-b5e7-fc88d4813d87"
+      }
+    },
+    "owner": "b_cpm",
+    "updates": {
+      "url": "https://u.expo.dev/4d9e34f2-cfad-4c14-b5e7-fc88d4813d87"
     }
   }
-}
+}g
